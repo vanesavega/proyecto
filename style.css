@@ -1,0 +1,227 @@
+
+:root{
+    --gris:  #59564F;
+    --cafeoscuro: #332d23  ;
+    --degradado: linear-gradient(90deg, #BA2CDD 3.46%, #FF1F00 102.52%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------------------------- inicio pagina -------------------------------- */
+.inicio{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedor_inicio_texto{
+    width: 40%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 60%;
+    background-color: rgba(0, 0, 0, 0.672);
+    background-blend-mode: multiply;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    z-index: 10;
+}
+.motivo_inicio{
+    position: absolute;
+    /* background-image: url(images/motivo2.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    opacity: 0.2;*/
+}
+.logo{
+    margin: 5%;
+    width: 50%;
+    height: 30%;
+    background-image: url(images/logo\ dkotco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+button {
+
+    display: inline-block;
+    border: none;
+    background: var(--degradado);
+    border: solid 7px white;
+    border-radius: 100px;
+    color: white;
+    min-width: 30%;
+    min-height: 8%;
+}
+
+button:hover{
+    filter: saturate(1.5);
+    filter: drop-shadow(10px 8px 20px rgba(216, 82, 160, 0.877));
+}  
+
+
+/* -------------------------------- parrafo  -------------------------------- */
+
+.transicion{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 3px 3px rgb(65, 65, 65);
+    background-color: var(--gris); 
+    color: white;
+}
+.transicion h2{
+    font-size: 5em;
+    font-weight: 100;
+}
+
+/* -------------------------------- descripcion -------------------------------- */
+
+.descripcion{
+    width: 100vw;
+    height: 90vh;
+    background-color: white;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.descripcion_texto{
+    position: relative;
+    width: 70%;
+    height: 80%;
+    background-color: var(--cafeoscuro);
+    box-shadow: 30px 30px  20px  rgba(0, 0, 0, 0.342);
+    align-items: center;
+}
+
+.motivo_descripcion{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/motivo3.png);
+    opacity: 0.5;
+    background-size: cover;
+    background-blend-mode: overlay ;
+    z-index: 0;
+}
+
+.texto{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    z-index: 1;
+}
+
+.texto h2{
+    font-size: 10em;
+}
+
+.texto h3{
+    font-size: 4em;
+    line-height: 3em;
+}
+
+/* -------------------------------- sobre -------------------------------- */
+
+.sobre_nosotros{
+    width: 100vw;
+    height: 90vh ;
+    position: relative;
+}
+
+.fondo_nos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(images/fondo\ about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode:hard-light;
+    filter: contrast(0.4) brightness(0.5) grayscale(0) saturate(0.5) sepia(0.2) ;
+    z-index: 0;
+}
+
+.texto_c2{
+    width: 100%;
+    height: 100%;
+    justify-content:space-around;
+    justify-items: center;
+    z-index: 1;
+}
+.texto_c2 h2{
+    font-size: 10em;
+}
+
+.tarjeta_contenedor{
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    z-index: 2;
+}
+
+.tarjeta{
+    width: 30%;
+    height: 100%;
+    background-color: #16100bca;
+    padding: 2%;
+    font-size: 8em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.tarjeta img{
+    width: fit-content;
+}
+.diferencia{
+    padding: 2%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorc3_texto{
+    width: 80%;
+
+}
+.c3_title{
+    font-size: 15em;
+    line-height: 2em;
+    flex-grow: 2/10;
+    
+}
+.btn_c3{
+    width: 80%;
+    height: 20%;
+    font-size: 5em;
+}
+.c3_texto{
+    margin-left: 5%;
+    font-size: 5em;
+    line-height: 2em;
+    text-align: justify;
+    flex-grow: 8/10;
+
+}
